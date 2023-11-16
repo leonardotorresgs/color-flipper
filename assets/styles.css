@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: inline-block;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    width: 500px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -250px;
+}
+
+div p {
+    font-size: 50px;
+    background-color: #2F1B25;
+    box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.changeColor:hover {
+    background-color: #2F1B25;
+    color: #f2f2f2;
+}
+
+.changeColor:active {
+    background-color: #2f1b25b0;
+}
+
+.copy img {
+    height: 30px;
+}
+
+.copy:active {
+    background-color: rgba(0, 0, 0, 0.425);
+    transition: 0.4s;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    background-color: #2F1B25;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.popup {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
